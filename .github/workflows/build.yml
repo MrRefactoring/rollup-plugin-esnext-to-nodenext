@@ -1,0 +1,55 @@
+name: Build and Lint
+
+on:
+  push:
+
+env:
+  PNPM_VERSION: '10'
+
+jobs:
+  build:
+    name: 🏗️ Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - name: 🔄 Checkout sources
+        uses: actions/checkout@v4
+      - name: ⚙️ Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - name: 📌 Installing dependencies
+        run: pnpm install --frozen-lockfile
+      - name: 🛠️ Building sources
+        run: pnpm run build
+
+  lint:
+    name: 🔍 Lint Code
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 20.x, 22.x ]
+    steps:
+      - name: 🔄 Checkout sources
+        uses: actions/checkout@v4
+      - name: ⚙️ Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - name: 📌 Installing dependencies
+        run: pnpm install --frozen-lockfile
+      - name: ✨ Linting
+        run: pnpm run lint
+        env:
+          CI: true

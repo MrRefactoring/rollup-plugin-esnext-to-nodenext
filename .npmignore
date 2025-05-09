@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+
+.editorconfig
+eslint.config.ts
+rollup.config.ts
+tsconfig.json
