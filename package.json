@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
+  "repository": "https://github.com/MrRefactoring/rollup-plugin-esnext-to-nodenext.git",
+  "homepage": "https://github.com/MrRefactoring/rollup-plugin-esnext-to-nodenext",
   "license": "MIT",
   "type": "module",
   "module": "./dist/index.js",

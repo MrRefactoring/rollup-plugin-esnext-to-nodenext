@@ -1,8 +1,11 @@
-import {defineConfig} from 'rollup';
+import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
-import {fileURLToPath} from "node:url";
-import {dirname, resolve} from "node:path";
-import {readFileSync} from "node:fs";
+import { fileURLToPath } from "node:url";
+import {
+  dirname,
+  resolve,
+} from "node:path";
+import { readFileSync } from "node:fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
