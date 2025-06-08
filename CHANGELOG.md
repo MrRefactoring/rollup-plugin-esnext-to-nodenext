@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - Cosmetic Improvement - 2025-06-08
+
+### 💄 Cosmetic Improvements
+- Code style improvements and minor refactoring (thanks @tritiumTino)
+- Updated project documentation (README.md) (thanks @tritiumTino)
+- Updated dependencies to their latest versions
+
 ## [1.0.0] - Initial Release - 2025-05-09
 
 ### 🚀 Features

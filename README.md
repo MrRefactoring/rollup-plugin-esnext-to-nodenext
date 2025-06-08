@@ -2,10 +2,10 @@
   <h1>Rollup Plugin ESNext to NodeNext</h1>
   <a href="https://www.npmjs.com/package/rollup-plugin-esnext-to-nodenext" target="_blank" rel="noopener noreferrer"><img alt="NPM version" src="https://img.shields.io/npm/v/rollup-plugin-esnext-to-nodenext.svg?maxAge=3600&style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/rollup-plugin-esnext-to-nodenext" target="_blank" rel="noopener noreferrer"><img alt="NPM downloads per month" src="https://img.shields.io/npm/dm/rollup-plugin-esnext-to-nodenext.svg?maxAge=3600&style=flat-square" /></a>
-  <a href="https://github.com/mrrefactoring/rollup-plugin-esnext-to-nodenext/blob/master/.github/workflows/build.yml" target="_blank" rel="noopener noreferrer"><img alt="build status" src="https://img.shields.io/github/actions/workflow/status/mrrefactoring/rollup-plugin-esnext-to-nodenext/.github/workflows/build.yml?branch=master&style=flat-square"></a>
+  <a href="https://github.com/mrrefactoring/rollup-plugin-esnext-to-nodenext" target="_blank" rel="noopener noreferrer"><img alt="build status" src="https://img.shields.io/github/actions/workflow/status/mrrefactoring/rollup-plugin-esnext-to-nodenext/.github/workflows/build.yml?branch=master&style=flat-square"></a>
   <a href="https://github.com/mrrefactoring/rollup-plugin-esnext-to-nodenext/blob/master/LICENSE" target="_blank" rel="noopener noreferrer"><img alt="license" src="https://img.shields.io/github/license/mrrefactoring/rollup-plugin-esnext-to-nodenext?color=green&style=flat-square"/></a>
 
-<span>A Rollup plugin that transforms ESM imports to Node.js-compatible `nodenext` format by adding explicit file extensions.</span>
+<span>A Rollup plugin that transforms `ESM` imports to Node.js-compatible `NodeNext` format by adding explicit file extensions.</span>
 </div>
 
 ## Features

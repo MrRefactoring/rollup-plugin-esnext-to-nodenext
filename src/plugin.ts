@@ -41,7 +41,7 @@ export default function postprocessNodeNext(options: Options = {
       const result = await tsAddJsExtension({
         config: {
           dir: outputDir,
-          showChanges: options.verbose,
+          showProgress: options.verbose,
         },
       });
 
